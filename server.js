@@ -77,7 +77,7 @@
 
   server = http.createServer(function(req, res) {
     res.writeHead(200, {
-      'Content-Type': 'text/html'
+      'Content-Type': 'text/html;charset=UTF8'
     });
     return res.end("<!--Welcome to Heroku https://github.com/onplus/shadowsocks-heroku--><html><head><title>细声工作室</title></head><body>细声工作室</body></html>");
   });
