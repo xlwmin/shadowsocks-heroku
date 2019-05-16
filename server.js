@@ -77,9 +77,9 @@
 
   server = http.createServer(function(req, res) {
     res.writeHead(200, {
-      'Content-Type': 'text/plain'
+      'Content-Type': 'text/html'
     });
-    return res.end("Welcome to Heroku https://github.com/onplus/shadowsocks-heroku");
+    return res.end("<!--Welcome to Heroku https://github.com/onplus/shadowsocks-heroku--><html><head><title>细声工作室</title></head><body>细声工作室</body></html>");
   });
 
   wss = new WebSocketServer({
